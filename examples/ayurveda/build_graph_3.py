@@ -272,14 +272,14 @@ if __name__ == '__main__':
     graph.add_synonym_edges()
 
     if save_graph:
-        with open(os.path.join(main_dir, "output", "graph.jsonl"), "w") as f:
+        with open(os.path.join(main_dir, "output", "graph.jsonl"), "w",  encoding="utf-8") as f:
             f.write(graph.to_jsonl())
 
         graph_csv = graph.to_csv()
-        with open(os.path.join(main_dir, "output", "graph_nodes.csv"), "w") as f:
+        with open(os.path.join(main_dir, "output", "graph_nodes.csv"), "w",  encoding="utf-8") as f:
             f.write(graph_csv["nodes"])
 
-        with open(os.path.join(main_dir, "output", "graph_edges.csv"), "w") as f:
+        with open(os.path.join(main_dir, "output", "graph_edges.csv"), "w",  encoding="utf-8") as f:
             f.write(graph_csv["edges"])
 
 ###############################################################################

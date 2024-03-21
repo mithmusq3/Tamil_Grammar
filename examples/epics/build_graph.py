@@ -137,7 +137,7 @@ if __name__ == '__main__':
     graph = build_graph()
 
     if save_graph:
-        with open(os.path.join(main_dir, "output", "epics.jsonl"), "w") as f:
+        with open(os.path.join(main_dir, "output", "epics.jsonl"), "w",  encoding="utf-8") as f:
             f.write(graph.to_jsonl())
 
 ###############################################################################

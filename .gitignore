@@ -2,6 +2,8 @@
 db/*
 !db/README.md
 
+.venv
+
 data/*
 !data/tables
 
